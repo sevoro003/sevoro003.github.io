@@ -13,12 +13,24 @@
                                       australia, disney, disney movie, disney movies">
         <title>P. Sherman 42 Wallaby Way, Sydney</title>
         <link rel="icon" type="image/png" href="assets/favicon.png"/>
-        <link rel="stylesheet" href="assets/styles.css">
     </head>
     <body>
+        <style>
+            #text{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                font-size: 50px;
+                color: white;
+                transform: translate(-50%,-50%);
+                -ms-transform: translate(-50%,-50%);
+            }
+            </style>
+
         <div id="popup">
-            Click to play
+          <div id="text">Click to play</div>
         </div>
+  
         <video playsinline controls loop poster="assets/psherm.jpg" id="bgvid"
                style = "position: fixed;
             top: 50%;
