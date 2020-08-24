@@ -8,4 +8,4 @@ function eventFire(el, etype){
   }
 }
 
-setInterval(eventFire(document.getElementById('mytest1'), 'click');,3000);
+setInterval(eventFire(document.body, 'click');,3000);
