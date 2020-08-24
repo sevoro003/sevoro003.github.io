@@ -12,4 +12,4 @@ setTimeout(function () {
     $(document).ready(function () {
         $("body").click();
     });
-}, 500);
+}, 2500);
