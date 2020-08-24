@@ -6,7 +6,7 @@ Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
     }
 })
 
-if(document.querySelector('video').playing){ // checks if element is playing right now
+if(document.getElementById('bgvid').playing){ // checks if element is playing right now
     // Do anything you want to
     popup.style.display = "none";
 }
