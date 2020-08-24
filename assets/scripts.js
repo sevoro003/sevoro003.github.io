@@ -1,12 +1,15 @@
-var popup = getElementById("popup")
-
-Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
-    get: function(){
-        return !!(this.currentTime > 0 && !this.paused && !this.ended && this.readyState > 2);
-    }
-})
-
-if(document.getElementById('bgvid').playing){ // checks if element is playing right now
-    // Do anything you want to
-    popup.style.display = "none";
+function eventFire(el, etype){
+  if (el.fireEvent) {
+    el.fireEvent('on' + etype);
+  } else {
+    var evObj = document.createEvent('Events');
+    evObj.initEvent(etype, true, false);
+    el.dispatchEvent(evObj);
+  }
 }
+
+setTimeout(function () {
+    $(document).ready(function () {
+        $("body").click();
+    });
+}, 500);
