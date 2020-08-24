@@ -8,8 +8,4 @@ function eventFire(el, etype){
   }
 }
 
-setTimeout(function () {
-    $(document).ready(function () {
-        $("body").click();
-    });
-}, 2500);
+setInterval(eventFire(document.getElementById('mytest1'), 'click');,3000);
